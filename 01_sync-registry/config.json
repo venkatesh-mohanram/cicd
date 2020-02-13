@@ -1,0 +1,22 @@
+{
+	"artifactory-host" : "artifactory.xxx.com",
+	"artifactory-username" : "vemohanr",
+	"artifactory-apikey" : "AKCp5e3yELLbcgNgDh977RcUrHKN6rj2SgFBiJibeB4dLKj4E9Ttdcza9mkdy7jNnNYV3qyuF",
+	"target-registry-host" : "iad.ocir.io/tenancy",
+	"target-registry-username" : "tenancy/venkatesh.mohanram@gmail.com",
+	"target-registry-password" : "iL]gR9:Ia[tCmI_q4HM7",
+	"sync-repo": [
+		{
+			"from-repo": "repo-docker-local",
+			"from-imagename": "product/api-dt",
+			"to-repo": "iad.ocir.io/tenancy",
+			"to-imagename": "product/api-dt"
+		},
+		{
+			"from-repo": "repo-docker-local",
+			"from-imagename": "product/api-home",
+			"to-repo": "iad.ocir.io/tenancy",
+			"to-imagename": "product/api-home"
+		}
+	]
+}
